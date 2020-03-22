@@ -20,13 +20,6 @@
       content
       <template slot="foot">foot</template>
     </win>
-    <k-form-item label="用户名" prop="name">
-      <k-input type="text" v-model="ruleForm.name"></k-input>
-    </k-form-item>
-    <k-form-item label="密码" prop="pwd">
-      <k-input type="password" v-model="ruleForm.pwd"></k-input>
-    </k-form-item>
-    {{ruleForm}}
   </div>
 </template>
 
@@ -34,9 +27,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Cart from './components/Cart'
 import FormTest from './components/FormTest'
-import KInput from './components/Input'
 import Win from './components/Window'
-import KFormItem from './components/FormItem'
 import axios from 'axios'
 
 export default {
@@ -89,9 +80,7 @@ export default {
     HelloWorld,
     Cart,
     FormTest,
-    KInput,
-    Win,
-    KFormItem
+    Win
   }
 }
 </script>

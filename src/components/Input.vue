@@ -27,7 +27,6 @@ export default {
     inputHandler(e) {
       this.inputValue = e.target.value;
       this.$emit("input", this.inputValue);
-      console.log(this.$parent);
       this.$parent.$emit("validate");
     //   this.dispatch("k-form-item", "validate", null);
     },

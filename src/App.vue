@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <span v-if='showName'>{{name}}</span>
     <input type="text" v-model="newGoodName">
     <input type="text" v-model="newGoodPrice"><button @click="addGood">增加产品</button>
